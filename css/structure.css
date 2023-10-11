@@ -1,0 +1,448 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap");
+
+/* pre-define css code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+}
+html,
+body {
+  background: #ffffff;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Source Sans 3", sans-serif;
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* body scroolbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* end body scroolbar */
+
+/* remove scrollbar when open modal */
+body.modal-open {
+  overflow: auto;
+}
+body.modal-open[style] {
+  padding-right: 0px !important;
+}
+body.modal-open {
+  overflow-y: scroll;
+}
+.modal::-webkit-scrollbar {
+  width: 0 !important;
+}
+/* remove scrollbar when open modal */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-out 0s;
+}
+button:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+button:disabled {
+  background: var(--bs-primary-500);
+  opacity: 40%;
+  cursor: not-allowed;
+  border: 1px transparent !important;
+  color: var(--bs-white) !important;
+  border-color: none;
+}
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+  border: 0;
+  color: var(--bs-white);
+}
+.form-check-input:checked {
+  border: none !important;
+  outline: none;
+}
+.form-select:focus {
+  box-shadow: inherit;
+  border: none;
+  outline: none;
+}
+
+input.form-control:focus {
+  box-shadow: inherit;
+}
+textarea.form-control:focus {
+  box-shadow: inherit;
+}
+.form-check-input:focus {
+  box-shadow: inherit;
+  border: none;
+}
+
+[type="search"] {
+  outline-offset: inherit;
+  border: none !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.form-control::placeholder {
+  color: var(--bs-neutral-500);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+textarea.form-control::placeholder {
+  color: var(--bs-neutral-500);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* head text format */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  color: var(--txt-title-color);
+  font-family: "montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 72px;
+}
+h2 {
+  font-size: 48px;
+  line-height: 64px;
+}
+h3 {
+  font-size: 40px;
+  line-height: 56px;
+}
+h4 {
+  font-size: 32px;
+  line-height: 40px;
+}
+h5 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+h6 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.fs-6 {
+  font-size: 18px !important;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--txt-title-color);
+}
+/* head text format */
+
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: var(--txt-paragrap-color);
+  font-size: 16px;
+  line-height: 24px;
+}
+a {
+  margin: 0;
+  padding: 0;
+  color: unset;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+a:hover {
+  color: unset;
+}
+
+del {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+label {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+small {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* color variable */
+:root {
+  /* text color */
+  --txt-title-color: var(--bs-neutral-900);
+  --txt-subtitle-color: var(--bs-neutral-600);
+  --txt-paragrap-color: var(--bs-neutral-500);
+  /* end text color */
+
+  /* brand color */
+  --bs-primary-600: #f29544;
+  --bs-primary-500: #f3a25b;
+  /* brand color */
+
+  /* universal color */
+  --bs-white: #ffffff;
+  --bs-black: #0a0a0a;
+  /* universal color */
+
+  /* neutral color */
+  --bs-neutral-950: #0a0a0a;
+  --bs-neutral-900: #171717;
+  --bs-neutral-800: #262626;
+  --bs-neutral-700: #404040;
+  --bs-neutral-600: #525252;
+  --bs-neutral-500: #737373;
+  --bs-neutral-400: #a3a3a3;
+  --bs-neutral-300: #d4d4d4;
+  --bs-neutral-200: #e5e5e5;
+  --bs-neutral-100: #f5f5f5;
+  --bs-neutral-50: #fafafa;
+  /* end neutral color */
+
+  /* success color */
+  --bs-success-950: #052e16;
+  --bs-success-900: #14532d;
+  --bs-success-800: #166534;
+  --bs-success-700: #15803d;
+  --bs-success-600: #16a34a;
+  --bs-success-500: #22c55e;
+  --bs-success-400: #4ade80;
+  --bs-success-300: #86efac;
+  --bs-success-200: #bbf7d0;
+  --bs-success-100: #dcfce7;
+  --bs-success-50: #f0fdf4;
+
+  /* end success color */
+
+  /* info color */
+  --bs-info-950: #172554;
+  --bs-info-900: #1e3a8a;
+  --bs-info-800: #1e40af;
+  --bs-info-700: #1d4ed8;
+  --bs-info-600: #2563eb;
+  --bs-info-500: #3b82f6;
+  --bs-info-400: #60a5fa;
+  --bs-info-300: #93c5fd;
+  --bs-info-200: #bfdbfe;
+  --bs-info-100: #dbeafe;
+  --bs-info-50: #eff6ff;
+
+  /* end info color */
+
+  /* warning color */
+  --bs-warning-950: #422006;
+  --bs-warning-900: #713f12;
+  --bs-warning-800: #854d0e;
+  --bs-warning-700: #a16207;
+  --bs-warning-600: #ca8a04;
+  --bs-warning-500: #eab308;
+  --bs-warning-400: #facc15;
+  --bs-warning-300: #fde047;
+  --bs-warning-200: #fef08a;
+  --bs-warning-100: #fef9c3;
+  --bs-warning-50: #fefce8;
+  /* end warning color */
+
+  /* danger color */
+  --bs-danger-950: #450a0a;
+  --bs-danger-900: #7f1d1d;
+  --bs-danger-800: #991b1b;
+  --bs-danger-700: #b91c1c;
+  --bs-danger-600: #dc2626;
+  --bs-danger-500: #ef4444;
+  --bs-danger-400: #f87171;
+  --bs-danger-300: #fca5a5;
+  --bs-danger-200: #fecaca;
+  --bs-danger-100: #fee2e2;
+  --bs-danger-50: #fef2f2;
+  /* end danger color */
+
+  /* orange color */
+  --bs-orange-950: #431407;
+  --bs-orange-900: #7c2d12;
+  --bs-orange-800: #9a3412;
+  --bs-orange-700: #c2410c;
+  --bs-orange-600: #ea580c;
+  --bs-orange-500: #f97316;
+  --bs-orange-400: #fb923c;
+  --bs-orange-300: #fdba74;
+  --bs-orange-200: #fed7aa;
+  --bs-orange-100: #ffedd5;
+  --bs-orange-50: #fff7ed;
+  /* end orange color */
+}
+/* end color variable */
+
+/* custom class */
+.txt-primary {
+  color: var(--bs-primary-500);
+}
+.txt-success {
+  color: var(--bs-success-500);
+}
+.txt-danger {
+  color: var(--bs-danger-500);
+}
+.txt-warning {
+  color: var(--bs-warning-500);
+}
+.txt-info {
+  color: var(--bs-info-500);
+}
+.txt-black {
+  color: var(--bs-black);
+}
+.txt-white {
+  color: var(--bs-white);
+}
+
+.txt-hide {
+  display: block;
+}
+
+.txt-in {
+  display: none;
+}
+
+.bs-primary-50 {
+  background: var(--bs-primary-50);
+  color: var(--bs-primary);
+}
+
+.bs-primary-500 {
+  background: var(--bs-primary-500);
+  color: var(--bs-white);
+}
+
+.bs-success-50 {
+  background: var(--bs-success-50);
+  color: var(--bs-success-500);
+}
+
+.bs-success-500 {
+  background: var(--bs-success-500);
+  color: var(--bs-white);
+}
+
+.bs-info-50 {
+  background: var(--bs-info-50);
+  color: var(--bs-info-500);
+}
+
+.bs-info-500 {
+  background: var(--bs-info-500);
+  color: var(--bs-white);
+}
+
+.bs-warning-50 {
+  background: var(--bs-warning-50);
+  color: var(--bs-warning-500);
+}
+
+.bs-warning-500 {
+  background: var(--bs-warning-500);
+  color: var(--bs-white);
+}
+
+.bs-danger-50 {
+  background: var(--bs-danger-50);
+  color: var(--bs-danger-500);
+}
+
+.bs-danger-500 {
+  background: var(--bs-danger-500);
+  color: var(--bs-white);
+}
+
+.bs-orange-50 {
+  background: var(--bs-orange-50);
+  color: var(--bs-orange-500);
+}
+
+.bs-orange-500 {
+  background: var(--bs-orange-500);
+  color: var(--bs-white);
+}
+/* end custom class */
+/* end pre-define css code */

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- set your title -->
+  <title> MayNooth</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- replace favicon path or source here -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo/index.ico">
+
+  <!-- bootstrap and font-awesome cdn link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- end bootstrap and font-awesome cdn link -->
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end custom css link -->
+</head>
+
+<body class="body-class">
+  <div class="app">
+    <!-- navbar area -->
+    <div class="navbar-wrapper">
+      <div class="container-fluid">
+        <nav class="navbar">
+          <div class="navbar-brand d-flex align-items-center">
+            <div class="inner-page-nav w-100">
+              <a class="back-btn" href="index.html">
+                <img src="images/master_icon/nav_back_icon.svg" alt="" class="w-auto h-auto">
+              </a>
+              <p>Register</p>
+            </div>
+
+            <div class="mobile-nav-toggler inner-page">
+              <img src="images/icon/fa_bar.svg" alt="">
+            </div>
+            <div class="logo inner-page">
+              <a href="index.html"><img src="images/logo/logo.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="navbar-menu">
+            <ul class="navbar-nav flex-row" id="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="livingroom.html">Living Room</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="bedroom.html">Bed room</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="kitchen_dining_room.html">Kitchen & Dining</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-action inner-page d-flex align-items-center">
+            <div class="search-icon">
+              <img src="images/icon/nav_search.svg" alt="">
+            </div>
+            <div class="app-search-box">
+              <form class="app-search-form d-flex justify-content-center align-items-center">
+                <div class="search-box">
+                  <input type="text" class="form-control" placeholder="Search Every Things" id="searchInput">
+                  <img src="images/icon/nav_search.svg" alt="" class="search_icon w-auto h-auto">
+                  <ul id="searchResults" class="search_result" style="display: none;">
+                    <div class="d-flex align-items-center justify-content-between recent_results">
+                      <p>Recent</p> <a href="#">Clear All</a>
+                    </div>
+                    <li> <span><img src="images/master_icon/search_product_img.png" alt="" class="search_item_img">
+                        How to
+                        registration
+                        on steadfast</span> <img src="images/master_icon/search_close.png" alt="" class="close_recent">
+                    </li>
+                    <li> <span><img src="images/master_icon/search_product_img.png" alt="" class="search_item_img">
+                        How to
+                        withdraw
+                        My
+                        Payments</span> <img src="images/master_icon/search_close.png" alt="" class="close_recent">
+                    </li>
+                    <li> <span><img src="images/master_icon/search_product_img.png" alt="" class="search_item_img">What
+                        the call
+                        center
+                        Number</span> <img src="images/master_icon/search_close.png" alt="" class="close_recent">
+                    </li>
+                  </ul>
+                </div>
+              </form>
+              <div class="search-backdrop">
+              </div>
+            </div>
+            <a href="wishlist.html" class="carts-link wishlist d-flex gap-3">
+              <div class="cart-icon d-flex align-items-center justify-content-center position-relative">
+                <img src="images/icon/nav_heart.svg" alt="" class="w-auto h-auto">
+                <span class="badge">5</span>
+              </div>
+            </a>
+
+            <a href="product_cart.html" class="carts-link cart d-flex gap-3">
+              <div class="cart-icon d-flex align-items-center justify-content-center position-relative">
+                <img src="images/icon/nav_cart.svg" alt="" class="w-auto h-auto">
+                <span class="badge">5</span>
+              </div>
+            </a>
+            <a href="dashboard.html">
+              <div class="user_account">
+                <img src="images/icon/user.svg" alt="">
+              </div>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!--end navbar area -->
+
+
+    <!-- mobile menu  -->
+    <div class="mobile-menu">
+      <div class="menu-backdrop"></div>
+      <nav class="menu-box">
+        <div class="menubtn d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <a href="index.html"> <img src="images/logo/logo.svg" class="img-fluid" /></a>
+          </div>
+          <div class="close-btn ">
+            <img src="images/master_icon/close.png" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="menu-outer">
+
+        </div>
+      </nav>
+    </div>
+    <!-- end mobile menu  -->
+
+
+    <!-- Register -->
+    <div class="authentic-wrapper">
+      <div class="container-fluid">
+        <div class="login-register-form d-flex justify-content-center align-items-center flex-column">
+          <div class="favcon-icon">
+            <img src="images/logo/favcon_icon.svg" alt="" class="w-auto h-auto">
+          </div>
+          <h5>Welcome to MayNooth</h5>
+          <small class="send-sms text-center">Enter your information for register</small>
+          <form action="">
+            <div class="form-group position-relative mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Name">
+              <!-- <label for="" class="helper-text">Invalid Name</label>
+            <img src="images/icon/invalid_icon.svg" alt="" class="feedback-icon"> -->
+            </div>
+            <div class="form-group position-relative mb-3">
+              <input type="number" class="form-control" id="phn_num" placeholder="Phone Number">
+              <!-- <label for="" class="helper-text">Invalid Name</label>
+            <img src="images/icon/invalid_icon.svg" alt="" class="feedback-icon"> -->
+            </div>
+            <div class="form-group position-relative mb-3">
+              <input type="password" class="form-control" id="pass" placeholder="Password">
+              <!-- <label for="" class="helper-text">Invalid Name</label>
+            <img src="images/icon/invalid_icon.svg" alt="" class="feedback-icon"> -->
+            </div>
+            <div class="form-action-btn">
+              <button class="btn btn-md w-100">Register</button>
+            </div>
+          </form>
+
+          <a href="forget_password.html">Forgot Password?</a>
+          <p class="w-100 d-flex justify-content-center align-items-center gap-2">New Customer? <a href="login.html">
+              Login </a> Here</p>
+
+          <div class="social-media-login gap-4 d-flex">
+            <button class="google-btn btn btn-md w-50 d-flex gap-2 align-items-center justify-content-center"><img
+                src="images/master_icon/login_google.svg" alt="">
+              Log in with Google</button>
+            <button class="fb-btn btn btn-md w-50 d-flex gap-2 align-items-center justify-content-center"><img
+                src="images/master_icon/logi_fb.svg" alt="">
+              Log in with Facebook</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- end Register -->
+
+
+
+    <!-- footer area -->
+    <div class="footer-wrapper">
+      <div class="container-fluid">
+        <div class="footer d-flex flex-column">
+          <div class="footer-top d-flex">
+            <div class="shop-information w-50 d-flex">
+              <div class="d-flex flex-column gap-5 w-75">
+                <div class="logo">
+                  <img src="images/logo/footer_logo.svg" alt="">
+                </div>
+                <div class="contact-info d-flex flex-column">
+                  <p>T3118 Doctors Drive,Los Angeles, California 90017 </p>
+                  <p>Customer Support: 8801315565037 </p>
+                  <p>Email: support@maynooth.com</p>
+                </div>
+                <div class="social-icon d-flex gap-4 align-items-center">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+              </div>
+              <div class=" d-flex flex-column w-25">
+                <div class="footer-title">
+                  <p>Information</p>
+                </div>
+                <div class="links d-flex flex-column  align-items-start gap-2">
+                  <a href="#">About Us</a>
+                  <a href="#">Terms & Condition</a>
+                  <a href="#">Security & Privacy</a>
+                  <a href="#">Terms & Condition</a>
+                </div>
+              </div>
+            </div>
+            <div class="important-link w-50 d-flex">
+              <div class=" d-flex flex-column">
+                <div class="footer-title">
+                  <p>Element</p>
+                </div>
+                <div class="links d-flex flex-column  align-items-start gap-2">
+                  <a href="#">Pricing Table</a>
+                  <a href="#">Terms & Condition</a>
+                  <a href="#">Security & Privacy</a>
+                  <a href="#">Terms & Condition</a>
+                </div>
+              </div>
+              <div class=" d-flex flex-column">
+                <div class="footer-title">
+                  <p>Help</p>
+                </div>
+                <div class="links d-flex flex-column  align-items-start gap-2">
+                  <a href="#">Contact Us</a>
+                  <a href="#">How to Order</a>
+                  <a href="#">Pre Order Policy</a>
+                  <a href="#">Cancelation & Return</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom d-flex justify-content-center align-items-center">
+            <p> © 2020 - 2023 MyNooth. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer area -->
+  </div>
+
+
+
+  <!-- bootstrap and jquery cdn link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <!-- end bootstrap and jquery cdn link -->
+
+  <!-- custom javascript link -->
+  <script src="js/custom.js"></script>
+  <script src="js/master.js"></script>
+  <script src="js/slick-animation.min.js"></script>
+  <script src="js/customslider.js"></script>
+  <!-- end custom javascript link -->
+
+
+
+
+</body>
+
+</html>

@@ -1431,7 +1431,29 @@
 .menu-items .nav-item .nav-link:hover svg .pass {
   stroke: var(--bs-primary-500);
 }
-
+.logout-action {
+  padding: 20px 20px 20px 0;
+  margin-top: 14px;
+}
+.logout-action a {
+  border: 1px solid var(--bs-neutral-200);
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+.logout-action a:focus {
+  color: var(--bs-primary-500);
+  border: 1px solid var(--bs-primary-500);
+}
+.logout-action a:hover {
+  color: var(--bs-primary-500);
+  border: 1px solid var(--bs-primary-500);
+}
+.logout-action a:focus svg .signout {
+  stroke: var(--bs-primary-500);
+}
+.logout-action a:hover svg .signout {
+  stroke: var(--bs-primary-500);
+}
 /*------end left side menu------*/
 .recent_order_list {
   margin-top: 34px;

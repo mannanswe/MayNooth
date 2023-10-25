@@ -1573,13 +1573,13 @@
 .card_action .action_item_list .action_item_link:hover {
   color: var(--bs-primary-500);
 }
-.card_action .action_item_list .action_item_link:hover svg #edit {
+.card_action .action_item_list .action_item_link:hover svg .edit {
   stroke: var(--bs-primary-500);
 }
-.card_action .action_item_list .action_item_link:hover svg #make_default {
+.card_action .action_item_list .action_item_link:hover svg .make_default {
   stroke: var(--bs-primary-500);
 }
-.card_action .action_item_list .action_item_link:hover svg #deleteicon {
+.card_action .action_item_list .action_item_link:hover svg .deleteicon {
   fill: var(--bs-primary-500);
 }
 .account-setting {

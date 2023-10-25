@@ -2675,7 +2675,7 @@ a.btn{
     font-weight: 500;
     color: var(--bs-black);
   }
-  .price span {
+  .price div {
     display: flex;
     justify-content: space-between;
   }

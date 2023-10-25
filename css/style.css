@@ -454,16 +454,17 @@ a.btn{
 }
 .breadcrumb-item {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   display: flex;
   align-items: center;
-  color: var(--bs-neutral-500);
+  color: var(--bs-neutral-950);
 }
 .breadcrumb-item.active {
   color: var(--bs-neutral-950);
+  font-weight: 600;
 }
 .breadcrumb-item + .breadcrumb-item::before {
-  color: var(--bs-neutral-500);
+  color: var(--bs-neutral-950);
 }
 
 /*end banner area */

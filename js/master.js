@@ -47,23 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //------End custom Ajax Search box
 //------End custom Ajax Search box
 
-//------Custom Ajax Group Search box
-//------Custom Ajax Group Search box
 
-document.addEventListener("DOMContentLoaded", function () {
-  const searchInput = document.getElementById("groupSearchInput");
-  const searchResults = document.getElementById("groupSearchResults");
-
-  searchInput.addEventListener("focus", function () {
-    searchResults.style.display = "block";
-  });
-
-  searchInput.addEventListener("blur", function () {
-    searchResults.style.display = "none";
-  });
-});
-//------End custom Ajax Group Search box
-//------End custom Ajax Group Search box
 
 //------Custom dropdown menu box
 //------Custom dropdown menu box

@@ -1037,6 +1037,11 @@
 .slide-content a {
   margin-top: 24px;
 }
+.slide-content a.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .intro-wrapper .container-fluid {
   height: 100%;
 }

@@ -157,7 +157,7 @@ a.btn{
 }
 .products .product-img img {
   border-radius: 8px;
-  object-fit: contain;
+  
 }
 .products .card {
   box-shadow: none;
